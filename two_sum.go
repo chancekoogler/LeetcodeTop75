@@ -1,10 +1,10 @@
-package sum
+package leetcode
 
 import "testing"
 
 func twoSum(nums []int, target int) []int {
 	m := make(map[int]int)
-	for i, _ := range nums {
+	for i := range nums {
 		desiredValue := target - nums[i]
 		if _, ok := m[desiredValue]; ok {
 			return []int{i, m[desiredValue]}
